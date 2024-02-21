@@ -11,44 +11,53 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>TIA</title>
   </head>
   <body>
-    <div class="px-4 py-5 my-5 text-center">
-      <img
-        class="d-block mx-auto mb-4"
-        src="https://cdn.dribbble.com/users/1937292/screenshots/5737024/media/f6ddc556fb3ca4e78c4f23bddfc862fe.gif"
-        alt=""
-        width="200px"
-        height="150px"
-      />
-      <h1 class="display-5 fw-bold text-body-emphasis">Welcome to TIA!</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Your personal Travel Itinerary Assitant</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <form class="form-inline" role="search"></form>
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Where do you want to go?"
-              aria-label="Where do you want to go?"
-              aria-describedby="basic-addon2"
-            />
-
-            <div class="input-group-append">
-              <button class="btn btn-lg btn-primary" type="submit">
-                Let's Go
-              </button>
-            </div>
+    <div id="container">
+      <div class="px-4 py-5 my-5 text-center">
+        <div class="header-container">
+          <h1 id="header" class="display-2 fw-bold text-body-emphasis">
+            T I A
+          </h1>
+          <div class="mx-auto">
+            <h2 class="lead mb-5">Your Personal Travel Itinerary Assitant</h2>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="container-ai"></div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <form id="travel-form" class="form-control-lg">
+            <div class="input-group input-group-lg">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Where shall we go?"
+                aria-label="Where to?"
+                aria-describedby="basic-addon2"
+                required
+              />
+              <input type="submit" class="btn btn-info" value="Let's Go" />
+            </div>
+          </form>
+        </div>
 
-    <script src="src/index.js"></script>
+        <div id="travel-itinerary">
+          <img
+            src="https://cdn.dribbble.com/users/846207/screenshots/7617197/media/e87a923768846bc12f00539d66e80931.gif"
+            alt="Yellow airplane"
+          />
+        </div>
+      </div>
+
+      <script src="src/index.js"></script>
+    </div>
   </body>
+
   <footer>
     This AI project was coded by
     <a href="https://github.com/johtemp">Jo Templeton</a> and is open sourced on
