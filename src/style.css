@@ -1,4 +1,46 @@
 footer {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(128, 128, 128, 0.599);
+  padding: 5px;
+}
+
+body {
+  background-image: url("https://cdn.dribbble.com/users/1786655/screenshots/5680567/12___.png");
+}
+
+#container {
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  max-width: 600px;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+a {
+  text-decoration: none !important;
+  color: rgb(144, 202, 235) !important;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 0;
+}
+
+#header {
+  color: rgb(63, 27, 77) !important;
+  background-color: rgba(255, 198, 202, 0.203);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Londrina Outline", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
