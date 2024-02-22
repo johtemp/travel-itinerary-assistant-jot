@@ -1,9 +1,12 @@
 function generateTravel(event) {
   event.preventDefault();
 
-  let travelItineraryElement = document.getElementById("travel-itinerary");
-  travelItineraryElement.innerHTML =
-    "Full day: Colosseum, Ancient Rome, Pantheon, Spanish Steps, Trevi Fountain";
+  new Typewriter("#travel-itinerary", {
+    strings:
+      "Full day: Colosseum, Ancient Rome, Pantheon, Spanish Steps, Trevi Fountain",
+    autoStart: true,
+    delay: 1,
+  });
 }
 
 let travelFormElement = document.getElementById("travel-form");
